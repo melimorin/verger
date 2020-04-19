@@ -95,6 +95,7 @@ body {
   justify-content: space-evenly;
 }
 .nav .menu a {
+  font-family: "MaisonNeue";
   color: #C8C6C8;
   text-decoration: none;
   margin-left: 15px;
@@ -153,20 +154,44 @@ body {
   text-decoration: none;
 }
 
-.container-gallerie {
+.main {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+}
+.main .section-evenements h2 {
+  font-family: "MaisonNeue";
+  font-size: 25px;
+  margin-top: 115px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.main .container-gallerie {
   display: flex;
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
 }
-.container-gallerie .galerie-promo {
+.main .container-gallerie .galerie-promo {
   padding: 20px;
 }
-.container-gallerie .galerie-promo img {
+.main .container-gallerie .galerie-promo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.main .bouton-reserve {
+  background-color: #666366;
+  color: white;
+  text-decoration: none;
+  background-color: #666366;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  justify-content: right;
 }
 
 /*# sourceMappingURL=style.css.map */
