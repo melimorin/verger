@@ -54,19 +54,105 @@ table {
 
 @font-face {
   font-family: "MaisonNeue";
-  src: url("/fonts/MaisonNeue/MaisonNeue-Book.ttf") format("truetype");
+  src: url("/fonts/MaisonNeue-Book.ttf") format("truetype");
   font-weight: 350;
 }
 @font-face {
   font-family: "MaisonNeue";
-  src: url("/fonts/MaisonNeue/MaisonNeue-Medium.ttf") format("truetype");
+  src: url("/fonts/MaisonNeue-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "MaisonNeue";
-  src: url("/fonts/MaisonNeue/MaisonNeue-Demi.ttf") format("truetype");
+  src: url("/fonts/MaisonNeue-Demi.ttf") format("truetype");
   font-weight: 600;
 }
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: #666366;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #666366;
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+}
+.nav .menu {
+  justify-content: space-evenly;
+}
+.nav .menu a {
+  color: #C8C6C8;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.nav .logo {
+  width: 125px;
+}
+.nav .container-search {
+  flex-direction: row;
+  display: flex;
+}
+.nav .container-search button {
+  background-color: transparent;
+  border: none;
+}
+.nav .container-search button img {
+  width: 25px;
+}
+.nav .container-search form {
+  display: none;
+}
+
+.background-hero {
+  background-image: url(/images/appletree.jpg);
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  position: relative;
+}
+.background-hero .cadre-texte {
+  font-family: "MaisonNeue";
+  color: #0B0D12;
+  background-color: rgba(200, 198, 200, 0.5);
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  padding: 80px;
+  width: 35%;
+}
+.background-hero .cadre-texte h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.background-hero .cadre-texte p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.background-hero .cadre-texte a {
+  background-color: #666366;
+  color: white;
+  text-decoration: none;
+  background-color: #666366;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
 .container-gallerie {
   display: flex;
   flex-direction: row;

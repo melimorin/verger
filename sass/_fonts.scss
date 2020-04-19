@@ -5,18 +5,18 @@ $demi: 600;
 
 @font-face {
     font-family: 'MaisonNeue';
-    src: url('/fonts/MaisonNeue/MaisonNeue-Book.ttf')  format('truetype');
+    src: url('/fonts/MaisonNeue-Book.ttf')  format('truetype');
     font-weight: $book;
   }
 
 @font-face {
     font-family: 'MaisonNeue';
-    src: url('/fonts/MaisonNeue/MaisonNeue-Medium.ttf')  format('truetype');
+    src: url('/fonts/MaisonNeue-Medium.ttf')  format('truetype');
     font-weight: $medium;
   }
 
 @font-face {
     font-family: 'MaisonNeue';
-    src: url('/fonts/MaisonNeue/MaisonNeue-Demi.ttf')  format('truetype');
+    src: url('/fonts/MaisonNeue-Demi.ttf')  format('truetype');
     font-weight: $demi;
   }
