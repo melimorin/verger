@@ -162,3 +162,41 @@ body {
     }
 
 }
+
+.footer {
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    background-color: $dark-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .colomn {
+
+        flex-direction: column;
+        text-align: center;
+
+        .menu {
+    
+            a {
+                font-family: $title;
+                color: $pale-grey; 
+                text-decoration: none;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 40px;
+            }
+        }
+        .icon {
+            a {
+                font-family: $title;
+                color: $pale-grey; 
+                text-decoration: none;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+}
