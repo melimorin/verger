@@ -79,6 +79,8 @@ body {
             cursor: pointer;
             margin-left: 8px;
 
+            position: relative;
+
             img {
                 width: 25px;
             }
@@ -124,6 +126,11 @@ body {
             color: white;
             text-decoration: none;
             
+        }
+
+        a:hover {
+            background-color: grey;
+            transition: 0.3s;
         }
     }
 }
@@ -181,6 +188,10 @@ body {
                 width: 120px;
                 font-family: $title;
             }
+            .bouton-reserve:hover {
+                background-color: grey;
+                transition: 0.3s;
+            }
         }
     }
 
@@ -201,11 +212,19 @@ body {
         text-align: center;
 
         .chevron {
+            margin-bottom: 40px;
+
+            a {
                 color: $pale-grey; 
                 text-decoration: none;
                 margin-left: 15px;
                 margin-right: 15px;
-                margin-bottom: 40px;
+
+            }
+
+            a:hover {
+                color: white;
+            }
         }
 
         .menu {
@@ -246,6 +265,10 @@ body {
                 text-decoration: none;
                 margin-left: 15px;
                 margin-right: 15px;
+            }
+
+            a:hover {
+                color: white;
             }
         }
     }
