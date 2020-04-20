@@ -90,6 +90,7 @@ body {
   flex-direction: row;
   align-items: center;
   position: fixed;
+  z-index: 10;
 }
 .nav .menu {
   justify-content: space-evenly;
@@ -100,9 +101,26 @@ body {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 15px;
+  position: relative;
+}
+.nav .menu a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #C8C6C8;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav .menu a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .nav .logo {
-  width: 125px;
+  width: 145px;
 }
 .nav .container-search {
   flex-direction: row;
@@ -111,6 +129,8 @@ body {
 .nav .container-search button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  margin-left: 8px;
 }
 .nav .container-search button img {
   width: 25px;
@@ -123,7 +143,6 @@ body {
   background-image: url(/images/appletree.jpg);
   width: 100%;
   height: 100%;
-  z-index: -10;
   position: relative;
 }
 .background-hero .cadre-texte {
@@ -216,6 +235,16 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.footer .colomn .chevron {
+  color: #C8C6C8;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 40px;
+}
+.footer .colomn .menu {
+  margin-bottom: 40px;
+}
 .footer .colomn .menu a {
   font-family: "MaisonNeue";
   color: #C8C6C8;
@@ -223,6 +252,23 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 40px;
+  position: relative;
+}
+.footer .colomn .menu a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #C8C6C8;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.footer .colomn .menu a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .footer .colomn .icon a {
   font-family: "MaisonNeue";
