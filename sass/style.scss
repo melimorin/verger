@@ -227,6 +227,27 @@ body {
         .galerie-promo{
            padding: 20px;
            text-align: center;
+           position: relative;
+
+           .hover-image {
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: rgb(161, 144, 147, 0.45);
+            opacity: 0;
+            color: rgb(8, 1, 4);
+            transition: opacity 200ms ease-out;
+    
+        }
+
+        &:hover {
+            .hover-image {
+                transition: opacity 200ms ease-out;
+                opacity: 1;
+            }
+        }
 
            .description {
                margin-bottom: 25px;
@@ -234,6 +255,7 @@ body {
                font-family: $title;
                font-size: 23px;
            }
+
     
             img {
                 width: 100%;

@@ -268,6 +268,22 @@ body {
 .main .container-gallerie .galerie-promo {
   padding: 20px;
   text-align: center;
+  position: relative;
+}
+.main .container-gallerie .galerie-promo .hover-image {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(161, 144, 147, 0.45);
+  opacity: 0;
+  color: #080104;
+  transition: opacity 200ms ease-out;
+}
+.main .container-gallerie .galerie-promo:hover .hover-image {
+  transition: opacity 200ms ease-out;
+  opacity: 1;
 }
 .main .container-gallerie .galerie-promo .description {
   margin-bottom: 25px;
