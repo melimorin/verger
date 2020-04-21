@@ -87,15 +87,17 @@ body {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-around;
   background-color: #666366;
   width: 100%;
-  height: 100px;
-  flex-direction: row;
-  align-items: center;
   position: fixed;
   z-index: 10;
+}
+.nav .nav-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
 }
 .nav .menu {
   justify-content: space-evenly;
@@ -107,6 +109,11 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   position: relative;
+}
+.nav .menu.mobile {
+  font-size: 12px;
+  margin-bottom: 45px;
+  text-align: center;
 }
 .nav .menu a:after {
   background: none repeat scroll 0 0 transparent;
@@ -143,6 +150,21 @@ body {
 }
 .nav .container-search form {
   display: none;
+}
+
+@media (min-width: 576px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .desktop {
+    display: initial;
+  }
 }
 
 .background-hero {
@@ -291,7 +313,13 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 40px;
+  font-size: 12px;
   position: relative;
+}
+@media (min-width: 576px) {
+  .footer .colomn .menu a {
+    font-size: initial;
+  }
 }
 .footer .colomn .menu a:after {
   background: none repeat scroll 0 0 transparent;
