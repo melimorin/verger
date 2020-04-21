@@ -145,6 +145,22 @@ body {
   margin-left: 8px;
   position: relative;
 }
+.nav .container-search button:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #C8C6C8;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav .container-search button:hover:after {
+  width: 100%;
+  left: 0;
+}
 .nav .container-search button img {
   width: 25px;
 }
@@ -226,6 +242,9 @@ body {
   width: 100%;
   max-width: 1200px;
   display: flex;
+}
+.main .section-evenements {
+  width: 100%;
 }
 .main .section-evenements h2 {
   font-family: "MaisonNeue";
