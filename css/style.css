@@ -281,7 +281,7 @@ body {
   color: #080104;
   transition: opacity 200ms ease-out;
 }
-.main .container-gallerie .galerie-promo:hover .hover-image {
+.main .container-gallerie .galerie-promo a:hover .hover-image {
   transition: opacity 200ms ease-out;
   opacity: 1;
 }
